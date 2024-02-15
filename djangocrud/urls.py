@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+#Se añade la aplicacion tasks y el script views
+from tasks import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #Se añade la pagina que esta en views
+    path('', views.helloworld),
+    path('signup/', views.helloworld),
 ]
