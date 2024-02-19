@@ -1,7 +1,8 @@
 <h1>Sign up</h1>
 
+{{error}}
 
-<form action="/signup/" method="POST">
+<form method="POST">
     {% csrf_token %}
 
     {{form.as_p}}
