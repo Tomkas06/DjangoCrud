@@ -3,5 +3,19 @@
 
 {% block content %}
 <h1>Tasks</h1>
+
+
+<ul>
+    {% for task in tasks %}
+    <li>
+        <h2>{{task.title}}</h2>
+        <p>{{task.user.username}}</p>
+        <p>{{task.important}}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+
+
 {% endblock content %}
 
